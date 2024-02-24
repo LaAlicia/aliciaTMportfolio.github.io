@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    z-index: 1;
+    /* Place the navigation bar in front of the video */
+    height: 50px;
+
+}
+
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    color: purple;
+    text-decoration: none;
+    height: 50px;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 15px 20px;
+    color: purple;
+    font-size: medium;
+}
+
+
+
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    z-index: 3;
+    /* Place the content in front of the video */
+
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    height: 50px;
+
+}
+
+footer a {
+    display: block;
+    padding: 15px 20px;
+    color: purple;
+    text-decoration: none;
+
+}
+
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    /* Place the video behind other content */
+}
